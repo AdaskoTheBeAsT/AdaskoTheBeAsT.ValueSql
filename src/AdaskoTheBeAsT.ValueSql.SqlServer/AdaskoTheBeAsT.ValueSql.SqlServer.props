@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AdaskoTheBeAsT_ValueSql_DbSchema Condition="'$(AdaskoTheBeAsT_ValueSql_DbSchema)' == ''">dbo</AdaskoTheBeAsT_ValueSql_DbSchema>
+    <AdaskoTheBeAsT_ValueSql_UseOrdinal Condition="'$(AdaskoTheBeAsT_ValueSql_UseOrdinal)' == ''">false</AdaskoTheBeAsT_ValueSql_UseOrdinal>
+  </PropertyGroup>
+  <ItemGroup>
+    <CompilerVisibleProperty Include="AdaskoTheBeAsT_ValueSql_DbSchema" />
+    <CompilerVisibleProperty Include="AdaskoTheBeAsT_ValueSql_UseOrdinal" />
+  </ItemGroup>
+</Project>

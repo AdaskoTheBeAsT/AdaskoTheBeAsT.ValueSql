@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>b5a8e0f1-2c3d-4e5f-6a7b-8c9d0e1f2a3b</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AdaskoTheBeAsT.ValueSql.SourceGenerator</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Abstractions\IMapperClassGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Abstractions\ISourceGeneratorHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Builders\AdvancedSqlBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MapperClassGeneratorBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PropertyColumnInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SourceGeneratorHelperBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueSqlGeneratorOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ValueSqlSourceGeneratorBase.cs" />
+  </ItemGroup>
+</Project>
